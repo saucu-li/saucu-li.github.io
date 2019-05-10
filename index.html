@@ -2,8 +2,8 @@
 layout: default
 ---
 <link rel="stylesheet" type="text/css" href="{{ '/static/css/article-list.css' | prepend: site.baseurl | prepend: site.url}}" />
-
-<div class="row index left">
+<!-- row index -->
+<div class="left">
   <div class="col-sm-10 col-sm-offset-1 col-lg-9 col-lg-offset-1_5">
       <div>
         <section class="category-slice" post-cate="All">
@@ -75,11 +75,10 @@ layout: default
 <!--Pager-->
       </div>
   </div>
-</div>
    <!-- <button class="anchor"><i class="fa fa-anchor"></i></button> -->
     <div class="right">
         <div class="wrap">
-            
+            <!--分类归档-->
             <!-- Content -->
             <div class="side ">
                 <div>
@@ -99,6 +98,7 @@ layout: default
                     {% endfor %}
                 </ul>
             </div>
+            <!--标签云-->
             <!-- 其他div框放到这里 -->
             <div class="side">
                 <div>
@@ -138,6 +138,7 @@ layout: default
                     {% endfor %}
                 </div>
             </div>
+            <!--最近文章-->
             <div class="side">
                 <div>
                     <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
@@ -150,7 +151,8 @@ layout: default
                 </ul>
             </div>
 
-            <!-- <div class="side">
+            <!--links-->
+            <div class="side">
                 <div>
                     <i class="fa fa-external-link"></i>
                     Links
@@ -158,6 +160,9 @@ layout: default
                 <ul  class="content-ul">
 
                 </ul>
-            </div> -->
+            </div>
+
+
         </div>
       </div>
+</div>
