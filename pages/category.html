@@ -95,6 +95,22 @@ scripts: [category.js]
                 {% endfor %}
             </section>
             {% endfor %}
+                      <!-- Pager -->
+{% if posts.total_pages > 1 %}
+<ul class="pager">
+    {% if posts.previous_page %}
+    <li class="previous">
+        <a href="{{ posts.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
+    </li>
+    {% endif %}
+    {% if posts.next_page %}
+    <li class="next">
+        <a href="{{ posts.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
+    </li>
+    {% endif %}
+</ul>
+{% endif %}
+<!--Pager-->
 
         </div>
     </div>
