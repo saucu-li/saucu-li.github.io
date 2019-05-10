@@ -73,7 +73,7 @@ article footer a{
     color: #999;
     margin-right: 15px;
 }
-article .left {>ul {
+/* article .left {>ul {
             padding: 0;
             >li {
                 list-style: none;
@@ -224,4 +224,4 @@ article     .right {
 }
 .fa-th-list:before {
   content: "\f00b";
-}
+} */
