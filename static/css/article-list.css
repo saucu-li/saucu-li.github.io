@@ -74,7 +74,26 @@ article footer a{
     margin-right: 15px;
 }
 
-  /* .left {
+    .fa-pencil-square-o:before {
+  content: "\f044";
+}
+.fa-tags:before {
+  content: "\f02c";
+}
+.fa-th-list:before {
+  content: "\f00b";
+}
+
+
+.page[index] {
+    a {
+        color: #4d6dad;
+        transition: 0.5s ease;
+        &:hover {
+            color: #223253;
+        }
+    }
+    .left {
         >ul {
             padding: 0;
             >li {
@@ -216,15 +235,28 @@ article footer a{
                 }
             }
         }
-    } */
-
-
-    .fa-pencil-square-o:before {
-  content: "\f044";
+    }
 }
-.fa-tags:before {
-  content: "\f02c";
-}
-.fa-th-list:before {
-  content: "\f00b";
+@media screen and (max-width: 770px) {
+    .page[index] {
+        .left>ul li {
+            h2 {
+                font-size: 22px;
+            }
+            .excerpt {
+                h2 {
+                    font-size: 20px;
+                }
+                h3 {
+                    font-size: 18px;
+                }
+                h4 {
+                    font-size: 16px;
+                }
+                li{
+                    margin: 0;
+                }
+            }
+        }
+    }
 }
