@@ -10,7 +10,8 @@ tags:                               #标签
     - Redis
 
 ---
-[TOC]
+* TOC
+{:toc}
 # Redis Cluster
 
 ## 背景
