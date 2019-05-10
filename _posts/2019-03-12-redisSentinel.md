@@ -10,6 +10,7 @@ tags:                               #标签
     - Redis
 
 ---
+[TOC]
 # Redis Sentinel
 
 ### 主从复制的问题

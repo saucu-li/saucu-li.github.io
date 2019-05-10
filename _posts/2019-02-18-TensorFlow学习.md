@@ -10,6 +10,7 @@ tags:                               #标签
     - DL
 
 ---
+[TOC]
 # TensorFlow 学习与实战
 
 TensorFlow是一个编程系统,使用图(graphs)来表示计算任务,图(graphs)中的节点称之为op(operation),一个op获得0个或者多个Tensor,执行计算,产生0个或者多个Tensor.Tensor看做是一个n维的数组或者列表.图必须在会话Session里被启动
