@@ -36,7 +36,7 @@ disqus_shortname: "rainyalley" #评论
 
 
 url: "https://saucu-li.github.io" #博客地址
-imgrepo: "http://blog.rainyalley.com/static/img" #图床
+imgrepo: "https://saucu-li.github.io/static/img" #图床
 
 
 #url: "http://127.0.0.1:4000"
