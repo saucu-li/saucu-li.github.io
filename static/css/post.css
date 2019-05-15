@@ -117,7 +117,7 @@
 .content-navigation a:active {color: #99b}	/* 选定的链接 */
 
 .content-navigation{
-    max-width: 292px;
+    max-width: 350px;
     padding-left: 30px;
 }
 .content-navigation-header {
