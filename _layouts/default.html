@@ -24,35 +24,32 @@
                                 <!-- 图片 -->
                                 {% if site.sidebar-avatar %}
                                 <a href="{{ site.baseurl }}/Resume">
-                                   
-                                    <img src="{{'/ wxtouxiang.png' | prepend: site.staticimg }}" />
+                                    <img src="{{ '/wxtouxiang.png' | prepend: site.staticimg }}" alt="Picture">
                                 </a>
                                 {% endif %}
                                 <!-- 简介 -->
                                 {% if site.description %}
                                 <p>{{site.description}}</p>
                                 {% endif %}
-
-
                                 <!-- SNS Link -->
-                                <ul class="ui right floated">
-                                    <li>
-                                        <a href="{{ site.baseurl }}/feed.xml">
-                                            <div class="large ui secondary"><i class="rss icon"></i></div>
-
-                                        </a>
-                                    </li>
-
+                                <a class="ui image label">
+                                    <a href="{{ site.baseurl }}/feed.xml">
+                                        <div class="large ui secondary">
+                                            <i class="rss icon"></i>
+                                            RSS
+                                        </div>
+                                    </a>
+                                </a>
+                                <a class="ui image label">
                                     {% if site.github_username %}
-                                    <li>
-                                        <a target="_blank" href="https://github.com/{{ site.github_username }}">
-                                            <div class="large ui secondary"><i class="github icon"></i></div>
-                                        </a>
-                                    </li>
+                                    <a href="https://github.com/{{ site.github_username }}">
+                                        <div class="large ui secondary">
+                                            <i class="github icon"></i>
+                                            Github
+                                        </div>
+                                    </a>
                                     {% endif %}
-
-                                </ul>
-
+                                </a>
                             </div>
 
                         </div>
