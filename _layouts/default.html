@@ -13,6 +13,57 @@
             <div class="ui segment" id="codeByEuraxluo">
                 <div class="right ui rail " id="needhidden">
                     <div class="ui sticky divided items sheet">
+                        <!-- 博客简介 -->
+                        <div class="side item">
+                            <div class="content">
+                                <!-- 链接到简历 -->
+                                <a class="header" href="{{'/Resume/' | prepend: site.baseurl }}">Euraxluo</a>
+                            </div>
+                            <div class="description">
+                                <!-- Short About -->
+                                <section class="visible-md visible-lg">
+
+
+                                    <div class="short-about">
+                                        <!-- 图片 -->
+                                        {% if site.sidebar-avatar %}
+                                        <a href="{{ site.baseurl }}/Resume">
+                                            <img src="{{site.sidebar-avatar}}" />
+                                        </a>
+                                        {% endif %}
+                                        <!-- 简介 -->
+                                        {% if site.description %}
+                                        <p>{{site.description}}</p>
+                                        {% endif %}
+
+
+                                        <!-- SNS Link -->
+                                        <ul class="list-inline">
+                                            {% if site.RSS %}
+                                            <li>
+                                                <a href="{{ site.baseurl }}/feed.xml">
+                                                    <div class="column"><i class="rss icon"></i></div>
+
+                                                </a>
+                                            </li>
+                                            {% endif %}
+
+                                            {% if site.github_username %}
+                                            <li>
+                                                <a target="_blank" href="https://github.com/{{ site.github_username }}">
+                                                    <div class="column"><i class="github icon"></i></div>
+                                                </a>
+                                            </li>
+                                            {% endif %}
+
+                                        </ul>
+                                    </div>
+
+                                </section>
+                            </div>
+
+                        </div>
+                        <!-- 文章分类 -->
                         <div class="side item ">
                             <div class="content">
                                 <div class="header">
@@ -36,7 +87,7 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- 其他div框放到这里 -->
+                        <!-- 标签云 -->
                         <div class="side item">
                             <div class="content">
                                 <div class="header">
@@ -51,6 +102,7 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- 最近文章 -->
                         <div class="side item">
                             <div class="content">
                                 <div class="header">
@@ -66,6 +118,7 @@
                                 </div>
                             </div>
                         </div>
+
                     </div>
                 </div>
                 {{ content }}
@@ -96,9 +149,9 @@
         function changeDivHeight() {
             var codeByEuraxluo = document.getElementById('codeByEuraxluo');
             var needhidden = document.getElementById('needhidden');
-            if (codeByEuraxluo.scrollWidth + needhidden.scrollWidth+250 > window.innerWidth) {
+            if (codeByEuraxluo.scrollWidth + needhidden.scrollWidth + 250 > window.innerWidth) {
                 needhidden.style.display = "none";
-            }else needhidden.style.display="block";
+            } else needhidden.style.display = "block";
         }
 
     </script>
