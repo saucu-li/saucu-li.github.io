@@ -17,13 +17,13 @@
                         <div class="side item">
                             <div class="content">
                                 <div class="ui horizontal divider header">
-                                    <!-- 链接到简历 -->
-                                    <a class="header" href="{{'/Resume/' | prepend: site.baseurl }}">Euraxluo</a>
-
+                                    <!-- 链接到简历或者简介 -->
+                                    <a class="header"
+                                        href="{{'/Resume/' | prepend: site.baseurl }}">{{ site.title }}</a>
                                 </div>
                                 <div class="description">
                                     <p>
-                                        <!-- 图片 -->
+                                        <!-- 头像 -->
                                         {% if site.sidebar-avatar %}
                                         <a href="{{ site.baseurl }}/Resume" class="ui small circular image">
                                             <img src="{{ '/wxtouxiang.png' | prepend: site.staticimg }}">
@@ -38,18 +38,18 @@
 
                                     <!-- SNS Link -->
                                     <p>
-                                        <a class="ui image label" href="{{ site.baseurl }}/feed.xml">
+                                        <a class="ui medium image label" href="{{ site.baseurl }}/feed.xml">
                                             <i class="rss icon"></i>RSS
                                         </a>
-                                    </p>
-
-                                    {% if site.github_username %}
-                                    <p>
-                                        <a class="ui image label" href="https://github.com/{{ site.github_username }}">
+                                        {% if site.github_username %}
+                                        <a class="ui medium  image label"
+                                            href="https://github.com/{{ site.github_username }}">
                                             <i class="github icon"></i>Github
                                         </a>
+                                        {% endif %}
                                     </p>
-                                    {% endif %}
+
+
                                 </div>
                             </div>
 
