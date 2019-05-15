@@ -6,66 +6,69 @@ layout: default
 <link rel="stylesheet" type="text/css"
   href="{{'/static/css/tagCloud.css'| prepend : site.baseurl | prepend: site.url }}" />
 </style>
-<div class="row index">
-  <div class="col-sm-10 col-sm-offset-1 col-lg-9 col-lg-offset-1_5">
-    <div class="ui segment" id="codeByEuraxluo">
-      <!--style="margin: 0 auto"-->
-      <div class="right ui rail" style="">
-        <div class="ui sticky divided items">
-          <div class="side item ">
-            <div class="content">
-              <div class="header">
-                <i class="fa fa-th-list"></i>
-                分类
-              </div>
-              <div class="description">
-                <ul class="content-ul" cate>
-                  {% for category in site.categories order:ascending %}
-                  <li>
-                    <a href="{{ root_url }}{{ site.baseurl }}/{{ site.category_dir }}#{{ category | first }}"
-                      class="categories-list-item" cate="{{ category | first }}">
-                      <span class="name">
-                        {{ category | first }}
-                      </span>
-                      <span class="badge">{{ category | last | size }}</span>
-                    </a>
-                  </li>
-                  {% endfor %}
-                </ul>
-              </div>
+<div class="ui segment" id="codeByEuraxluo">
+    <!--style="margin: 0 auto"-->
+    <div class="right ui rail" style="">
+      <div class="ui sticky divided items">
+        <div class="side item ">
+          <div class="content">
+            <div class="header">
+              <i class="fa fa-th-list"></i>
+              分类
             </div>
-          </div>
-          <!-- 其他div框放到这里 -->
-          <div class="side item">
-            <div class="content">
-              <div class="header">
-                <i class="fa fa-tags"></i>
-                标签云
-              </div>
-              <div class=" tagcloud description ">
-                {% for tag in site.tags %}
-                <a href="#{{ tag | first }}">{{ tag | first }}</a>
+            <div class="description">
+              <ul class="content-ul" cate>
+                {% for category in site.categories order:ascending %}
+                <li>
+                  <a href="{{ root_url }}{{ site.baseurl }}/{{ site.category_dir }}#{{ category | first }}"
+                    class="categories-list-item" cate="{{ category | first }}">
+                    <span class="name">
+                      {{ category | first }}
+                    </span>
+                    <span class="badge">{{ category | last | size }}</span>
+                  </a>
+                </li>
                 {% endfor %}
-              </div>
+              </ul>
             </div>
           </div>
-          <div class="side item">
-            <div class="content">
-              <div class="header">
-                <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
-                最近文章
-              </div>
-              <div class="description">
-                <ul class="content-ul" recent>
-                  {% for post in site.posts offset: 0 limit: 10  %}
-                  <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-                  {% endfor %}
-                </ul>
-              </div>
+        </div>
+        <!-- 其他div框放到这里 -->
+        <div class="side item">
+          <div class="content">
+            <div class="header">
+              <i class="fa fa-tags"></i>
+              标签云
+            </div>
+            <div class=" tagcloud description ">
+              {% for tag in site.tags %}
+              <a href="#{{ tag | first }}">{{ tag | first }}</a>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+        <div class="side item">
+          <div class="content">
+            <div class="header">
+              <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+              最近文章
+            </div>
+            <div class="description">
+              <ul class="content-ul" recent>
+                {% for post in site.posts offset: 0 limit: 10  %}
+                <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+                {% endfor %}
+              </ul>
             </div>
           </div>
         </div>
       </div>
+    </div>
+
+    
+<div class="row index">
+  <div class="col-sm-10 col-sm-offset-1 col-lg-9 col-lg-offset-1_5">
+
       <!-- 正文 -->
       <div>
         <section class="category-slice" post-cate="All">
@@ -144,7 +147,11 @@ layout: default
       {% endif %} -->
         <!--Pager-->
       </div>
-    </div>
+
+
 
   </div>
+</div>
+
+
 </div>
