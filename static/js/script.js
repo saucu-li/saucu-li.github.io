@@ -7,8 +7,7 @@
  */
 $(document).ready(function() {
 
-    console.log("你不乖哦，彼此之间留点神秘感不好吗？");
-
+    console.log("code By Euraxluo");
     backToTop();
     search();
 });
@@ -42,7 +41,7 @@ function backToTop() {
 
 }
 
-// function search(){
+// function search(){//用于搜索功能
 //     (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
 //         (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
 //         e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.appendChild(s);
