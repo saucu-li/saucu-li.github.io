@@ -10,7 +10,8 @@
 
 服务地址：<https://swiftype.com/>
 
-设置方法可参考 <http://opiece.me/2015/04/16/site-search-by-swiftype/>
+谷歌登陆后选择site search
+然后创建一个爬虫去爬取你的github主页
 
 设置完毕后，您需要修改 `_config.yml` 中 `swiftype_searchId`。
 

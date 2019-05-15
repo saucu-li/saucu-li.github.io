@@ -27,7 +27,7 @@ defaults:
 
 title: "Euraxluo"  #blog name
 email: "1793939176@qq.com" #email
-description: "NLPer 泛语言编程者" #简介
+description: "NLPer pan-language" #简介
 github_username:  "saucu-li" #github
 sidebar-avatar: "wxtouxiang.png" #头像
 staticimg: "https://saucu-li.github.io/static/img" #网站静态资源
