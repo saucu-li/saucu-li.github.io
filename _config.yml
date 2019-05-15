@@ -29,7 +29,7 @@ title: "博客名"  #blog name
 email: "email@qq.com" #email
 description: "工程师" #简介
 github_username:  "saucu-li" #github
-sidebar-avatar: "static/img/wxtouxiang.png" #头像
+sidebar-avatar: "wxtouxiang.png" #头像
 swiftype_searchId: "ncwR9a8S9CTx2q9SgsJm" #搜索库
 disqus_shortname: "rainyalley" #评论
 staticimg: "https://saucu-li.github.io/static/img" #图床
