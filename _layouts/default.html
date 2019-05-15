@@ -10,65 +10,66 @@
     <div class="main">
         <div class="container">
 
-                <div class="ui segment" id="codeByEuraxluo" style=" overflow-x:hidden;">
-                        <div class="right ui rail " >
-                          <div class="ui sticky divided items sheet">
-                            <div class="side item ">
-                              <div class="content">
+            <div class="ui segment" id="codeByEuraxluo">
+                <div class="right ui rail " id="needhidden">
+                    <div class="ui sticky divided items sheet">
+                        <div class="side item ">
+                            <div class="content">
                                 <div class="header">
-                                  <i class="fa fa-th-list"></i>
-                                  分类
+                                    <i class="fa fa-th-list"></i>
+                                    分类
                                 </div>
                                 <div class="description">
-                                  <ul class="content-ul" cate>
-                                    {% for category in site.categories order:ascending %}
-                                    <li>
-                                      <a href="{{ root_url }}{{ site.baseurl }}/{{ site.category_dir }}#{{ category | first }}"
-                                        class="categories-list-item" cate="{{ category | first }}">
-                                        <span class="name">
-                                          {{ category | first }}
-                                        </span>
-                                        <span class="badge">{{ category | last | size }}</span>
-                                      </a>
-                                    </li>
-                                    {% endfor %}
-                                  </ul>
+                                    <ul class="content-ul" cate>
+                                        {% for category in site.categories order:ascending %}
+                                        <li>
+                                            <a href="{{ root_url }}{{ site.baseurl }}/{{ site.category_dir }}#{{ category | first }}"
+                                                class="categories-list-item" cate="{{ category | first }}">
+                                                <span class="name">
+                                                    {{ category | first }}
+                                                </span>
+                                                <span class="badge">{{ category | last | size }}</span>
+                                            </a>
+                                        </li>
+                                        {% endfor %}
+                                    </ul>
                                 </div>
-                              </div>
                             </div>
-                            <!-- 其他div框放到这里 -->
-                            <div class="side item">
-                              <div class="content">
-                                <div class="header">
-                                  <i class="fa fa-tags"></i>
-                                  标签云
-                                </div>
-                                <div class=" tagcloud"><!--description-->
-                                  {% for tag in site.tags %}
-                                  <a href="#{{ tag | first }}">{{ tag | first }}</a>
-                                  {% endfor %}
-                                </div>
-                              </div>
-                            </div>
-                            <div class="side item">
-                              <div class="content">
-                                <div class="header">
-                                  <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
-                                  最近文章
-                                </div>
-                                <div class="description">
-                                  <ul class="content-ul" recent>
-                                    {% for post in site.posts offset: 0 limit: 10  %}
-                                    <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-                                    {% endfor %}
-                                  </ul>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
                         </div>
-                    {{ content }}
+                        <!-- 其他div框放到这里 -->
+                        <div class="side item">
+                            <div class="content">
+                                <div class="header">
+                                    <i class="fa fa-tags"></i>
+                                    标签云
+                                </div>
+                                <div class=" tagcloud">
+                                    <!--description-->
+                                    {% for tag in site.tags %}
+                                    <a href="#{{ tag | first }}">{{ tag | first }}</a>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="side item">
+                            <div class="content">
+                                <div class="header">
+                                    <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                                    最近文章
+                                </div>
+                                <div class="description">
+                                    <ul class="content-ul" recent>
+                                        {% for post in site.posts offset: 0 limit: 10  %}
+                                        <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+                                        {% endfor %}
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                {{ content }}
+            </div>
 
         </div>
         <div class="page-scrollTop" data-toggle="tooltip" data-placement="top" title="Top">
@@ -79,13 +80,18 @@
         </div>
     </div>
     <script>
-            $('.ui.sticky')
-                .sticky({
-                    context: '#codeByEuraxluo',
-                    pushing: true
-                })
-                ;
-        </script>
+        $('.ui.sticky')
+            .sticky({
+                context: '#codeByEuraxluo',
+                pushing: true
+            })
+            ;
+        var codeByEuraxluo = document.getElementById('codeByEuraxluo');
+        var needhidden = document.getElementById('needhidden');
+        if (codeByEuraxluo.scrollWidth + needhidden.scrollWidth > window.innerWidth) {
+            needhidden.style.display = "none";
+        }
+    </script>
     {% include footer.html %}
 
 </body>
