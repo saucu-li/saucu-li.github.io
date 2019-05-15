@@ -39,8 +39,8 @@ staticimg: "https://saucu-li.github.io/static/img" #网站静态资源
 # Gitalk评论
 gitalk:
   enable: true    #是否开启Gitalk评论
-  clientID: 012782a6e2c702513063 #b43ee7c4ef398fc280c6                           #生成的clientID
-  clientSecret: 1ed7a26d37182abec49f3d8c362dc41e2d463533 #8fdd763d3597283e2d5a7dccc649c845c3e42c19    #生成的clientSecret
+  clientID: 59950782f3ee3975fd60 #8e3b5021c3d411b967ae                          #生成的clientID
+  clientSecret: 6ce5ca9db1c653f29754ed33c3d75b3cdf3f0ae1 #6b7fa1af068e0c0527d6c98f1fe5b61f2f71a0fc    #生成的clientSecret
   repo: saucu-li.github.io    #仓库名称
   owner: saucu-li    #github用户名
   admin: saucu-li
