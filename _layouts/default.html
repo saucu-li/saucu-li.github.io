@@ -85,12 +85,22 @@
                 context: '#codeByEuraxluo',
                 pushing: true
             })
-            ;
-        var codeByEuraxluo = document.getElementById('codeByEuraxluo');
-        var needhidden = document.getElementById('needhidden');
-        if (codeByEuraxluo.scrollWidth + needhidden.scrollWidth > window.innerWidth) {
-            needhidden.style.display = "none";
+
+        window.onload = function () {
+            changeDivHeight();
         }
+        //当浏览器窗口大小改变时，设置显示内容的高度
+        window.onresize = function () {
+            changeDivHeight();
+        }
+        function changeDivHeight() {
+            var codeByEuraxluo = document.getElementById('codeByEuraxluo');
+            var needhidden = document.getElementById('needhidden');
+            if (codeByEuraxluo.scrollWidth + needhidden.scrollWidth > window.innerWidth) {
+                needhidden.style.display = "none";
+            }
+        }
+
     </script>
     {% include footer.html %}
 
