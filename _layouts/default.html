@@ -42,7 +42,12 @@
                                     <i class="fa fa-tags"></i>
                                     标签云
                                 </div>
-                                <div class="description tagcloud">
+                                <div class=" tagcloud description ">
+                                    {% for tag in site.tags %}
+                                    <a href="#{{ tag | first }}">{{ tag | first }}</a>
+                                    {% endfor %}
+
+                                    <!-- 
                                     {% assign first = site.tags.first %}
                                     {% assign max = first[1].size %}
                                     {% assign min = max %}
@@ -71,9 +76,10 @@
                                     {% else %}
                                     {% assign color = 8 | minus: base %}
                                     {% endif %}
+
                                     <a href="{{ root_url }}{{ site.baseurl }}/{{ site.tag_dir }}#{{ tag[0] }}"
                                         style="font-size: {{ size }}pt; color: #{{ color }}{{ color }}{{ color }};">{{ tag[0] }}</a>
-                                    {% endfor %}
+                                    {% endfor %} -->
                                 </div>
                             </div>
                         </div>
@@ -107,16 +113,6 @@
             </a>
         </div>
     </div>
-
-    <script>
-        $('.ui.sticky')
-            .sticky({
-                context: '#codeByEuraxluo',
-                pushing: true
-            })
-            ;
-    </script>
-
 
     {% include footer.html %}
 
