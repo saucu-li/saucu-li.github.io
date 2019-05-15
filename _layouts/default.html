@@ -32,24 +32,21 @@
                                 <p>{{site.description}}</p>
                                 {% endif %}
                                 <!-- SNS Link -->
-                                <a class="ui image label">
-                                    <a href="{{ site.baseurl }}/feed.xml">
-                                        <div class="large ui secondary">
-                                            <i class="rss icon"></i>
-                                            RSS
-                                        </div>
-                                    </a>
+
+                                <a class="ui image label" href="{{ site.baseurl }}/feed.xml">
+                                    <i class="rss icon"></i>RSS
                                 </a>
-                                <a class="ui image label">
-                                    {% if site.github_username %}
-                                    <a href="https://github.com/{{ site.github_username }}">
-                                        <div class="large ui secondary">
-                                            <i class="github icon"></i>
-                                            Github
-                                        </div>
-                                    </a>
-                                    {% endif %}
+
+
+                                <a class="ui black ribbon label">
+                                    <i class="hotel icon"></i> 宾馆
                                 </a>
+                                {% if site.github_username %}
+                                <a class="ui image label" href="https://github.com/{{ site.github_username }}">
+                                    <i class="github icon"></i>Github
+                                </a>
+                                {% endif %}
+
                             </div>
 
                         </div>
