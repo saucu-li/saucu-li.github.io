@@ -28,7 +28,7 @@ function share(){
 }
 
 
-// function disqus(){
+// function disqus(){//用于disqus的评论系统
 //     /* * * CONFIGURATION VARIABLES * * */
 //     var disqus_shortname = '{{site.disqus_shortname}}';
 
