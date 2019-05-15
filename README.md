@@ -7,9 +7,7 @@
 ## 1.swiftype
 
 此服务提供站内搜索功能
-
 服务地址：<https://swiftype.com/>
-
 谷歌登陆后选择site search
 然后创建一个爬虫去爬取你的github主页
 
@@ -28,9 +26,12 @@
 ## 2.disqus
 
 此服务提供评论功能
-
 服务地址：<https://disqus.com/>
+设置完毕后, 你需要修改 `_config.yml` 中的 `disqus_shortname` 
 
-设置方法可参考 <http://blog.ihurray.com/blog/Disqus-learning.php>
+## 3. gitalk
 
-设置完毕后, 你需要修改 `_config.yml` 中的 `disqus_shortname` ,否则对您博客的评论将归到本人名下。
+此服务提供评论功能
+服务地址：<https://github.com/settings/applications/new>
+设置application，然后设置
+clientID以及clientSecret。然后即可
