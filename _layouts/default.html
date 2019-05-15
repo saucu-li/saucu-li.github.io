@@ -23,30 +23,26 @@
 
                                 <!-- 图片 -->
                                 {% if site.sidebar-avatar %}
-                                <a href="{{ site.baseurl }}/Resume">
-                                    <img src="{{ '/wxtouxiang.png' | prepend: site.staticimg }}" alt="Picture">
+                                <a class="ui ribbon label" href="{{ site.baseurl }}/Resume">
+                                    <img class="ui small circular image"
+                                        src="{{ '/wxtouxiang.png' | prepend: site.staticimg }}">
                                 </a>
                                 {% endif %}
+
                                 <!-- 简介 -->
                                 {% if site.description %}
                                 <p>{{site.description}}</p>
                                 {% endif %}
-                                <!-- SNS Link -->
 
+                                <!-- SNS Link -->
                                 <a class="ui image label" href="{{ site.baseurl }}/feed.xml">
                                     <i class="rss icon"></i>RSS
-                                </a>
-
-
-                                <a class="ui black ribbon label">
-                                    <i class="hotel icon"></i> 宾馆
                                 </a>
                                 {% if site.github_username %}
                                 <a class="ui image label" href="https://github.com/{{ site.github_username }}">
                                     <i class="github icon"></i>Github
                                 </a>
                                 {% endif %}
-
                             </div>
 
                         </div>
