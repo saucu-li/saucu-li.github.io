@@ -44,7 +44,7 @@
                                   <i class="fa fa-tags"></i>
                                   标签云
                                 </div>
-                                <div class=" tagcloud description ">
+                                <div class=" tagcloud"><!--description-->
                                   {% for tag in site.tags %}
                                   <a href="#{{ tag | first }}">{{ tag | first }}</a>
                                   {% endfor %}
