@@ -1,7 +1,7 @@
 ---
 layout: page
-title: 简历
-permalink: /Resume/
+title: resume
+permalink: /resume/
 icon: octicon-heart
 published: false
 ---

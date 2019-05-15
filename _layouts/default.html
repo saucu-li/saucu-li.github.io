@@ -19,14 +19,14 @@
                                 <div class="ui horizontal divider header">
                                     <!-- 链接到简历或者简介 -->
                                     <a class="header"
-                                        href="{{'/Resume/' | prepend: site.baseurl }}">{{ site.title }}</a>
+                                        href="{{'/resume/' | prepend: site.baseurl  | prepend: site.url}}">{{ site.title }}</a>
                                 </div>
                                 <div class="description">
                                     <p></p>
                                     <p>
                                         <!-- 头像 -->
                                         {% if site.sidebar-avatar %}
-                                        <a href="{{ site.baseurl }}/Resume" class="ui small circular image">
+                                        <a href="{{ site.baseurl }}/resume/" class="ui small circular image">
                                             <img src="{{ '/wxtouxiang.png' | prepend: site.staticimg }}">
                                         </a>
                                         {% endif %}
