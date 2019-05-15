@@ -46,7 +46,7 @@
                                 <div class=" tagcloud">
                                     <!--description-->
                                     {% for tag in site.tags %}
-                                    <a href="#{{ tag | first }}">{{ tag | first }}</a>
+                                    <a href="/tags/#{{ tag | first }}">{{ tag | first }}</a>
                                     {% endfor %}
                                 </div>
                             </div>
@@ -96,7 +96,7 @@
         function changeDivHeight() {
             var codeByEuraxluo = document.getElementById('codeByEuraxluo');
             var needhidden = document.getElementById('needhidden');
-            if (codeByEuraxluo.scrollWidth + needhidden.scrollWidth+200 > window.innerWidth) {
+            if (codeByEuraxluo.scrollWidth + needhidden.scrollWidth+300 > window.innerWidth) {
                 needhidden.style.display = "none";
             }else needhidden.style.display="block";
         }
