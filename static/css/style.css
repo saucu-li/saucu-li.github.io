@@ -144,11 +144,13 @@ a:active {text-decoration: none}	/* 选定的链接 */
 }
 
 .sheet{
+    font-size: x-large;
     padding:10px 30px;
 }
 
 @media screen and (max-width: 767px) {
     .sheet{
+        font-size: medium;
         padding-left: 10px;
         padding-right: 10px;
     }
