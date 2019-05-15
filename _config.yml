@@ -32,9 +32,19 @@ github_username:  "saucu-li" #github
 sidebar-avatar: "wxtouxiang.png" #头像
 staticimg: "https://saucu-li.github.io/static/img" #网站静态资源
 
-swiftype_searchId: "ncwR9a8S9CTx2q9SgsJm" #搜索库
-disqus_shortname: "rainyalley" #评论
+# swiftype_searchId: "ncwR9a8S9CTx2q9SgsJm" #搜索库
+# disqus_shortname: "rainyalley" #disqus评论
 
+
+# Gitalk评论
+gitalk:
+  enable: true    #是否开启Gitalk评论
+  clientID: b43ee7c4ef398fc280c6                           #生成的clientID
+  clientSecret: 8fdd763d3597283e2d5a7dccc649c845c3e42c19    #生成的clientSecret
+  repo: saucu-li.github.io    #仓库名称
+  owner: saucu-li    #github用户名
+  admin: saucu-li
+  distractionFreeMode: true #是否启用类似FB的阴影遮罩
 
 
 
