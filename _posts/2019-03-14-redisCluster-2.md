@@ -3,13 +3,13 @@ layout:   post
 title:   数据库        
 date:    2019-03-14      
 author:   Euraxluo           
-
-
-
+categories: Redis
 tags: 节点 集群 迁移
-- Redis
-
 ---
+* TOC
+{:toc}
+
+
 ## 集群伸缩
 ### 伸缩原理
 伸：增加节点

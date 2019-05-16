@@ -3,13 +3,13 @@ layout:   post
 title:   从零开始的ChatBot        
 date:    2019-2-24      
 author:   Euraxluo           
-
-
-
+categories: NLP
 tags: 读取 队列 张量
-- NLP
-
 ---
+* TOC
+{:toc}
+
+
 
 ### 计算密集型(tensorflow)
 cpu计算

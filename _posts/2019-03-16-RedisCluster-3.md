@@ -3,13 +3,13 @@ layout:   post
 title:   数据库        
 date:    2019-03-16      
 author:   Euraxluo           
-
-
-
+categories: Redis
 tags: 节点 集群 客户端
-- Redis
-
 ---
+* TOC
+{:toc}
+
+
 ## RedisCluster
 
 ## 客户端使用

@@ -3,13 +3,13 @@ layout:   post
 title:   数据库        
 date:    2019-03-13      
 author:   Euraxluo           
-
-
-
+categories: Redis
 tags: 节点 集群 哈希
-- Redis
-
 ---
+* TOC
+{:toc}
+
+
 # Redis Cluster
 
 ## 背景

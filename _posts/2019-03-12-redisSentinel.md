@@ -3,13 +3,13 @@ layout:   post
 title:   数据库        
 date:    2019-03-12      
 author:   Euraxluo           
-
-
-
+categories: Redis
 tags: 节点 故障 客户端
-- Redis
-
 ---
+* TOC
+{:toc}
+
+
 # Redis Sentinel
 
 ### 主从复制的问题
