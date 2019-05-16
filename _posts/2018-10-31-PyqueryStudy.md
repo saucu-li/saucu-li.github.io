@@ -1,10 +1,10 @@
 ---
 layout:   post          
-title:   爬虫學習        
+title:   pyquery        
 date:    2018-10-31      
 author:   Euraxluo           
 categories: 爬虫
-tags:
+tags: 
 ---
 * TOC
 {:toc}

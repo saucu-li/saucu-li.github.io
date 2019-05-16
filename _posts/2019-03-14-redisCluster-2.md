@@ -1,10 +1,10 @@
 ---
 layout:   post          
-title:   数据库        
+title:   RedisCluster02        
 date:    2019-03-14      
 author:   Euraxluo           
 categories: Redis
-tags: 节点 集群 迁移
+tags:  节点 集群 迁移
 ---
 * TOC
 {:toc}

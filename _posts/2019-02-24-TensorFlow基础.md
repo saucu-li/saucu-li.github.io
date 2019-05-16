@@ -1,10 +1,10 @@
 ---
 layout:   post          
-title:   从零开始的ChatBot        
+title:   TensorFlow基础        
 date:    2019-2-24      
 author:   Euraxluo           
 categories: NLP
-tags: 读取 队列 张量
+tags:  读取 队列 张量
 ---
 * TOC
 {:toc}

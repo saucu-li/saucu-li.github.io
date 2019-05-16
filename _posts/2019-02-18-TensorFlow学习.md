@@ -1,10 +1,10 @@
 ---
 layout:   post          
-title:   TensorFlow学习        
+title:   TensorFlow基础学习        
 date:    2019-01-18      
 author:   Euraxluo           
 categories: DL
-tags: 张量 变量 创建
+tags:  张量 变量 创建
 ---
 * TOC
 {:toc}

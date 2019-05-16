@@ -1,10 +1,10 @@
 ---
 layout:   post          
-title:   数据库        
+title:   RedisCluster01        
 date:    2019-03-13      
 author:   Euraxluo           
 categories: Redis
-tags: 节点 集群 哈希
+tags:  节点 集群 哈希
 ---
 * TOC
 {:toc}
