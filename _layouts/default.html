@@ -66,7 +66,7 @@
                                     <ul class="content-ul" cate>
                                         {% for category in site.categories order:ascending %}
                                         <li>
-                                            <a href="{{ root_url }}{{ site.baseurl }}/{{ site.category_dir }}#{{ category | first }}"
+                                            <a href="{{ root_url }}{{ site.baseurl }}/category/#{{ category | first }}"
                                                 class="categories-list-item" cate="{{ category | first }}">
                                                 <span class="name">
                                                     {{ category | first }}
@@ -89,7 +89,7 @@
                                 <div class=" tagcloud">
                                     <!--description-->
                                     {% for tag in site.tags %}
-                                    <a href="/tags/#{{ tag | first }}">{{ tag | first }}</a>
+                                    <a href="{{ root_url }}{{ site.baseurl }}/tags/#{{ tag | first }}">{{ tag | first }}</a>
                                     {% endfor %}
                                 </div>
                             </div>
