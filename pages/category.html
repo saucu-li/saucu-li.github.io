@@ -73,7 +73,7 @@ scripts: [category.js]
             <section class="category-slice" post-cate="{{category | first}}">
                 {% for posts in category  %}
                 {% for post in posts %}
-                {% if post.url %}
+                <!-- {% if post.url %} -->
                 <article>
                     <header>
                         <a href="{{ site.baseurl | prepend: site.url  }}/archive/#{{ post.date | date: '%Y-%m-%d' }}"><span
@@ -99,7 +99,7 @@ scripts: [category.js]
                         </footer>
                     </div>
                 </article>
-                {% endif %}
+                <!-- {% endif %} -->
                 {% endfor %}
                 {% endfor %}
             </section>
