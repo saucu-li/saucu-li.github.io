@@ -124,31 +124,63 @@
             </a>
         </div>
     </div>
-    <script>
-        $('.ui.sticky')
-            .sticky({
-                context: '#codeByEuraxluo',
-                pushing: true
-            })
 
+    {% include footer.html %}
+    <script>
         window.onload = function () {
-            changeDivHeight();
+            windowResizeEvent();
         }
-        //当浏览器窗口大小改变时，设置显示内容的高度
-        window.onresize = function () {
-            changeDivHeight();
+
+        // 改进代码
+        function windowResizeEvent(callback) {
+            window.onresize = function () {
+                var target = this;
+                if (target.resizeFlag) {
+                    clearTimeout(target.resizeFlag);
+                }
+
+                target.resizeFlag = setTimeout(function () {
+                    changeDiv();
+                    target.resizeFlag = null;
+                }, 100);
+            }
         }
-        function changeDivHeight() {
+        function changeDivWithHight(){
             var codeByEuraxluo = document.getElementById('codeByEuraxluo');
             var needhidden = document.getElementById('needhidden');
-            if (codeByEuraxluo.scrollWidth + needhidden.scrollWidth + 250 > window.innerWidth || needhidden.scrollHeight > window.innerHeight) {
+            alert("changeDivWithHight");
+            console.log(codeByEuraxluo.scrollHeigh);
+            console.log(needhidden.scrollHeigh);
+            console.log(codeByEuraxluo.clientHeight);
+            console.log(needhidden.clientHeight);
+            console.log(window.innerWidth);
+            console.log(codeByEuraxluo.clientWidth);
+            console.log(needhidden.clientWidth);
+            console.log(codeByEuraxluo.scrollWidth);
+            console.log(needhidden.scrollWidth);
+            if (codeByEuraxluo.clientHeight < needhidden.clientHeight) {
+                needhidden.style.display = "none";
+            } else needhidden.style.display = "block";
+
+        }
+        function changeDivWithWidth() {
+            var codeByEuraxluo = document.getElementById('codeByEuraxluo');
+            var needhidden = document.getElementById('needhidden');
+            alert("changeDivWithWidth");
+            console.log(codeByEuraxluo.scrollHeigh);
+            console.log(needhidden.scrollHeigh);
+            console.log(codeByEuraxluo.clientHeight);
+            console.log(needhidden.clientHeight);
+            console.log(window.innerWidth);
+            console.log(codeByEuraxluo.clientWidth);
+            console.log(needhidden.clientWidth);
+            console.log(codeByEuraxluo.scrollWidth);
+            console.log(needhidden.scrollWidth);
+            if (codeByEuraxluo.scrollHeight < needhidden.clientHeight || codeByEuraxluo.scrollWidth + needhidden.clientHeight + 250 > window.innerWidth) {
                 needhidden.style.display = "none";
             } else needhidden.style.display = "block";
         }
-
     </script>
-    {% include footer.html %}
-
 </body>
 
 </html>
